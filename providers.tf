@@ -1,13 +1,14 @@
 terraform {
   required_providers {
     aws = {
-      version = "= 3.3.0"
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
     }
   }
 }
 
 
-# Brainboard aliases for AWS regions
+# SAS aliases for AWS regions
 provider "aws" {
   alias  = "us-east-1"
   region = "us-east-1"
